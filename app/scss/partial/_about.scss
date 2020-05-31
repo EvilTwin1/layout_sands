@@ -1,0 +1,48 @@
+.section-wrapp{
+  max-width: 1480px;
+  margin: auto;
+}
+
+.about--wrapp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px auto 130px ;
+}
+
+.about{
+  padding: 0 20px;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: row;
+    max-width: 478px;
+  }
+  &__img{
+    width: 69px;
+    height: 69px;
+  }
+  &__title{
+    margin: 0 0 20px 0;
+    font-family: Roboto;
+    font-weight: bold;
+    @include adaptiv-font(24, 18);
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #393939;
+  }
+  &__text{
+    margin: 0;
+    font-family: Roboto;
+    font-weight: normal;
+    @include adaptiv-font(18, 14);
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #393939;
+    max-width: 329px;
+  }
+}

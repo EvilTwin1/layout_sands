@@ -1,0 +1,45 @@
+@import "libs";
+@import "font";
+@import "vars";
+
+body{
+  background: #FAFAFA;
+}
+
+.section-title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  @include adaptiv-font(24,18);
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: #393939;
+  text-align: center;
+  position: relative;
+  &:before{
+    content: "";
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 40px;
+    border: 3px solid #FE9901;
+    left: 0;
+    top: 40px;
+  }
+}
+@import "partial/_modal";
+@import "partial/_header";
+@import "partial/_hero";
+@import "partial/_about";
+@import "partial/_features";
+@import "partial/_services";
+@import "partial/_review";
+@import "partial/_footer";
+@import "partial/_contact";
+
+
+.draggable{
+  padding: 20px 0;
+}
+
+@import "media";

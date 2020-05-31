@@ -1,0 +1,258 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+  .section-wrapp{
+    max-width: 1200px;
+  }
+  .section-wrapp--review{
+   max-width: 1240px;
+  }
+  .about__content{
+    margin-left: 35px;
+  }
+  .about__item{
+    max-width: 357px;
+  }
+  .features {
+    padding: 70px 20px 70px 20px;
+    background-color: white;
+  }
+  .features--active{
+    padding: 124px 51px 105px 51px;
+    background: #FE9901;
+  }
+  .features__descr{
+    padding-bottom: 40px;
+  }
+  .features__item{
+    padding: 83px 51px 68px 51px;
+    &:hover{
+      padding-top: 124px;
+      padding-bottom: 105px;
+    }
+  }
+  .features--active {
+    padding: 124px 51px 105px 51px;
+  }
+  .services__icon-wrapp{
+    height: 164px;
+  }
+  .services{
+    padding: 80px 20px;
+  }
+  .card{
+    padding: 60px 57px;
+  }
+}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .burger{
+    display: block;
+  }
+  .logo-solo{
+    display: block;
+  }
+
+  .about--wrapp{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__item{
+    max-width: 478px;
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 143px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+
+    margin: 0;
+
+    align-items: center;
+    flex-direction: column;
+
+
+    z-index: 2;
+    &__item{
+      margin: 15px 0;
+      &--logo{
+        display: none;
+      }
+    }
+  }
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .review-wrapp{
+    padding: 50px 20px;
+  }
+  .card{
+    width: auto;
+  }
+}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+  .features{
+    padding: 0;
+  }
+  .features--wrapp{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .features__item{
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+  .features__title{
+    margin: auto;
+  }
+  .features__descr{
+    margin: auto;
+  }
+  .features__cont{
+    margin: auto;
+  }
+
+}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .btn--heade{
+    display: none;
+  }
+  .call-small{
+    display: block;
+  }
+  .logo-mobile{
+    display: block;
+  }
+  .logo-solo{
+    display: none;
+  }
+  .nav{
+    background: #252525;
+    margin: auto;
+    padding: 15px 23px;
+  }
+  .top-line{
+    display: none;
+  }
+  .burger{
+    color: white;
+  }
+  .about__content{
+    margin-left: 25px;
+  }
+  .services--wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services__item{
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  .services{
+    padding: 70px 20px;
+  }
+  .menu{
+    top: 75px;
+  }
+}
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 550px) {
+  .modal__img{
+    display: none;
+  }
+  .modal__main{
+    margin: auto;
+  }
+}
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .about__title{
+    margin-bottom: 10px;
+  }
+  .card{
+    padding: 52px 49px;
+    margin: 0;
+    box-shadow: none;
+  }
+  .contact-box {
+    padding: 40px 20px;
+  }
+}
+/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
+/**/
+
+
+/*==========  Mobile First  ==========*/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
+/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .hero{
+    height: 650px;
+  }
+}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
+/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1500px) {
+  .hero{
+    height: 1000px;
+    &:before{
+      background-position: 50% 100%;
+    }
+  }
+}
+/**/
